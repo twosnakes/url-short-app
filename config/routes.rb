@@ -11,18 +11,18 @@ Rails.application.routes.draw do
    end
  end
 
-get '/' => 'slugs#index' 
-get '/slugs' => 'slugs#index'
+get '/' => 'links#index' 
+get '/links' => 'links#index'
 
-get '/slugs/new' => 'slugs#new'
-post '/slugs' => 'slugs#create'
+get '/links/new' => 'links#new'
+post '/links' => 'links#create'
 
-get '/slugs/:id' => 'slugs#show'
+get '/links/:id' => 'links#show'
 
-get '/slugs/:id/edit' => 'slugs#edit'
-patch '/slugs/:id' => 'slugs#update'
+get '/links/:id/edit' => 'links#edit'
+patch '/links/:id' => 'links#update'
 
-delete '/slugs/:id' => 'slugs#destroy'
+delete '/links/:id' => 'links#destroy'
 
  
 end
